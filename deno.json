@@ -1,33 +1,37 @@
 {
-  "name": "next-boilerplate",
-  "description": "A simple Next.js boilerplate",
-  "version": "0.0.1",
-  "private": true,
-  "type": "module",
-  "author": "Gusttavo Castro (castrogusttavo)",
-  "license": "MIT",
-  "keywords": [
-    "nextjs",
-    "starter",
-    "typescript",
-    "boilerplate"
-  ],
-  "tasks": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-  },
-  "imports": {
-    "@types/node": "npm:@types/node@^22.10.2",
-    "@types/react": "npm:@types/react@^19.0.2",
-    "@types/react-dom": "npm:@types/react-dom@^19.0.2",
-    "husky": "npm:husky@^9.1.7",
-    "next": "npm:next@^15.1.3",
-    "postcss": "npm:postcss@^8.4.49",
-    "react": "npm:react@^19.0.0",
-    "react-dom": "npm:react-dom@^19.0.0",
-    "tailwindcss": "npm:tailwindcss@^3.4.17",
-    "typescript": "npm:typescript@^5.7.2"
-  }
+	"name": "next-boilerplate",
+	"description": "A simple Next.js boilerplate",
+	"version": "0.0.1",
+	"private": true,
+	"type": "module",
+	"author": "Gusttavo Castro (castrogusttavo)",
+	"license": "MIT",
+	"keywords": ["nextjs", "starter", "typescript", "boilerplate"],
+	"exports": {
+		"./*": "./*"
+	},
+	"tasks": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"imports": {
+		"@biomejs/biome": "npm:@biomejs/biome@^1.9.4",
+		"@types/node": "npm:@types/node@^22.10.2",
+		"@types/react": "npm:@types/react@^19.0.2",
+		"@types/react-dom": "npm:@types/react-dom@^19.0.2",
+		"husky": "npm:husky@^9.1.7",
+		"next": "npm:next@^15.1.3",
+		"postcss": "npm:postcss@^8.4.49",
+		"react": "npm:react@^19.0.0",
+		"react-dom": "npm:react-dom@^19.0.0",
+		"tailwindcss": "npm:tailwindcss@^3.4.17",
+		"typescript": "npm:typescript@^5.7.2"
+	},
+	"compilerOptions": {
+		"jsx": "react-jsx",
+		"jsxImportSource": "react"
+	},
+	"nodeModulesDir": "auto"
 }
