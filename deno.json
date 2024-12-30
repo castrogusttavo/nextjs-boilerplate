@@ -14,7 +14,8 @@
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
-		"lint": "next lint"
+		"lint": "deno run -A npm:@biomejs/biome format --write",
+		"lint:check": "deno run -A npm:@biomejs/biome lint --write",
 	},
 	"imports": {
 		"@biomejs/biome": "npm:@biomejs/biome@^1.9.4",

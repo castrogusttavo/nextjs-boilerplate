@@ -7,7 +7,8 @@
 	},
 	"files": {
 		"ignoreUnknown": false,
-		"ignore": []
+		"ignore": [],
+		"include": ["app/**/*"]
 	},
 	"formatter": {
 		"enabled": true,
@@ -35,7 +36,7 @@
 			"semicolons": "always",
 			"arrowParentheses": "always",
 			"bracketSameLine": false,
-			"jsxQuoteStyle": "double",
+			"jsxQuoteStyle": "single",
 			"attributePosition": "auto",
 			"indentStyle": "space",
 			"indentWidth": 2,
