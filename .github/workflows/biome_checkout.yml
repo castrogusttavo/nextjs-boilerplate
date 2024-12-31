@@ -16,7 +16,9 @@ jobs:
           version: latest
       - name: Run Biome
         run: biome ci .
+
       - name: Check Types
         run: deno check .
+
       - name: Run Linter
         run: deno task format:check
