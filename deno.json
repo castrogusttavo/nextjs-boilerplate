@@ -18,7 +18,7 @@
 		"lint:fix": "deno run -A npm:@biomejs/biome lint --write",
 		"format": "deno run -A npm:@biomejs/biome format --write",
 		"format:check": "deno run -A npm:@biomejs/biome check --write",
-		"commit": "commit"
+		"prepare": "husky"
 	},
 	"imports": {
 		"@biomejs/biome": "npm:@biomejs/biome@^1.9.4",

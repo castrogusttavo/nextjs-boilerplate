@@ -3,6 +3,7 @@
   "specifiers": {
     "npm:@biomejs/biome@*": "1.9.4",
     "npm:@biomejs/biome@^1.9.4": "1.9.4",
+    "npm:@commitlint/cli@19.6.1": "19.6.1_typescript@5.7.2",
     "npm:@commitlint/cli@^19.6.1": "19.6.1_typescript@5.7.2",
     "npm:@commitlint/config-conventional@^19.6.0": "19.6.0",
     "npm:@types/node@^22.10.2": "22.10.2",
