@@ -7,9 +7,6 @@
 	"author": "Gusttavo Castro (castrogusttavo)",
 	"license": "MIT",
 	"keywords": ["nextjs", "starter", "typescript", "boilerplate"],
-	"exports": {
-		"./*": "./app/**/*"
-	},
 	"tasks": {
 		"dev": "next dev",
 		"build": "next build",
@@ -42,5 +39,8 @@
 		"jsx": "react-jsx",
 		"jsxImportSource": "react",
 	},
-	"nodeModulesDir": "auto"
+	"nodeModulesDir": "auto",
+	"engines": {
+		"node": ">=20.0.0"
+	}
 }
