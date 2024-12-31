@@ -13,7 +13,9 @@
     "boilerplate"
   ],
   "scripts": {
-    "deploy:vercel": "sh deploy-vercel.sh"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
     "dotenv": "^16.4.7",
