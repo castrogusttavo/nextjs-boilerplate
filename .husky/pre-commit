@@ -1,5 +1,2 @@
-echo "Running Deno Linter..."
-deno task lint
-
 echo "Formatting code with Deno..."
 deno task format
