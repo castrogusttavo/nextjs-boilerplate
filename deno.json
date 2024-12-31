@@ -17,10 +17,13 @@
 		"lint": "deno run -A npm:@biomejs/biome lint",
 		"lint:fix": "deno run -A npm:@biomejs/biome lint --write",
 		"format": "deno run -A npm:@biomejs/biome format --write",
-		"format:check": "deno run -A npm:@biomejs/biome check --write"
+		"format:check": "deno run -A npm:@biomejs/biome check --write",
+		"prepare": "husky"
 	},
 	"imports": {
 		"@biomejs/biome": "npm:@biomejs/biome@^1.9.4",
+		"@commitlint/cli": "npm:@commitlint/cli@^19.6.1",
+		"@commitlint/config-conventional": "npm:@commitlint/config-conventional@^19.6.0",
 		"@types/node": "npm:@types/node@^22.10.2",
 		"@types/react": "npm:@types/react@^19.0.2",
 		"@types/react-dom": "npm:@types/react-dom@^19.0.2",
