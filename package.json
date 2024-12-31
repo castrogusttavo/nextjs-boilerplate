@@ -6,24 +6,23 @@
   "type": "module",
   "author": "Gusttavo Castro (castrogusttavo)",
   "license": "MIT",
-  "keywords": [
-    "nextjs",
-    "starter",
-    "typescript",
-    "boilerplate"
-  ],
+  "keywords": ["nextjs", "starter", "typescript", "boilerplate"],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "biome lint --write",
+    "format": "biome format --write",
+    "format:check": "biome check --write",
+    "prepare": "husky install",
+    "deploy:vercel": "sh deploy-vercel.sh"
   },
   "dependencies": {
-    "dotenv": "^16.4.7",
-    "i18next": "24.2.0",
     "next": "^15.1.3",
-    "postcss": "^8.4.49",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "dotenv": "^16.4.7",
+    "postcss": "^8.4.49",
     "tailwindcss": "^4.0.0-beta.8",
     "zod": "^3.24.1"
   },
@@ -45,10 +44,6 @@
   },
   "engines": {
     "node": ">=20.0.0"
-  },
-  "compilerOptions": {
-    "jsx": "react-jsx",
-    "jsxImportSource": "react"
   },
   "nodeModulesDir": "auto"
 }
