@@ -1,18 +1,41 @@
-name: Code quality
+name: Check PR
 
-on:
-  push:
-  pull_request:
+on: [pull_request]
 
 jobs:
-  quality:
+  run-ci:
+    name: Run Type Check & Linters
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
-      - name: Setup Biome
-        uses: biomejs/setup-biome@v2
         with:
-          version: latest
-      - name: Run Biome
-        run: biome ci .
+          fetch-depth: 0
+
+      - name: Install Deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: latest
+
+      - name: Cache Deno dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/deno
+          key: ${{ runner.os }}-deno-${{ hashFiles('deno.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-deno-
+
+      - name: Cache Deno CLI
+        uses: actions/cache@v3
+        with:
+          path: ~/.deno
+          key: deno-cli-${{ runner.os }}-${{ hashFiles('deno.json', 'deno.jsonc') }}
+          restore-keys: |
+            deno-cli-${{ runner.os }}-
+
+      - name: Check Types
+        run: deno check .
+
+      - name: Run Linter
+        run: deno task format:check
