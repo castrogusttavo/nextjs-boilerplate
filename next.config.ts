@@ -1,8 +1,5 @@
 import type { NextConfig } from 'next';
 
-import './app/lib/env/server.ts'
-import './app/lib/env/client.ts'
-
 import { redirects } from './redirects.ts';
 
 /**
