@@ -8,13 +8,7 @@
   "license": "MIT",
   "keywords": ["nextjs", "starter", "typescript", "boilerplate"],
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "biome lint --write",
-    "format": "biome format --write",
-    "format:check": "biome check --write",
-    "prepare": "husky install"
+    "deploy:vercel": "sh deploy-vercel.sh"
   },
   "dependencies": {
     "next": "^15.1.3",

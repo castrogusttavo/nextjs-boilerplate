@@ -52,13 +52,13 @@ The best way to start with this template is using [Create Next App](https://next
 
 ```
 # deno
-deno create next-app -e https://github.com/castrogusttavo/nextjs-boilerplate
+deno run -A npm:create-next-app@latest -e castrogusttavo/nextjs-boilerplate
 
 # yarn
-yarn create next-app -e https://github.com/castrogusttavo/nextjs-boilerplate
+yarn create next-app -e castrogusttavo/nextjs-boilerplate
 
 # npm
-npx create-next-app -e https://github.com/castrogusttavo/nextjs-boilerplate
+npx create-next-app -e castrogusttavo/nextjs-boilerplate
 ```
 
 ### Development
