@@ -11,6 +11,7 @@
 !.yarn/versions
 deno.json
 deno.lock
+.idea
 
 # testing
 /coverage
