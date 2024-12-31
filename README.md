@@ -111,9 +111,9 @@ This starter uses Deno by default, but this choice is yours. If you'd like to sw
 
 ### Environment Variables
 
-We use [T3 Env](https://env.t3.gg/) to manage environment variables. Create a `.env.local` file in the root of the project and add your environment variables there.
+We use [Dot Env](https://www.npmjs.com/package/dotenv) to manage environment variables. Create a `.env.local` file in the root of the project and add your environment variables there.
 
-When adding additional environment variables, the schema in `./src/lib/env/client.ts` or `./src/lib/env/server.ts` should be updated accordingly.
+When adding additional environment variables, the schema in `./app/lib/env/client.ts` or `./app/lib/env/server.ts` should be updated accordingly.
 
 ### Redirects
 

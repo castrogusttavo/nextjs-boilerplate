@@ -10,6 +10,7 @@
     "npm:@types/react-dom@^19.0.2": "19.0.2_@types+react@19.0.2",
     "npm:@types/react@^19.0.2": "19.0.2",
     "npm:create-next-app@latest": "15.1.3",
+    "npm:dotenv@^16.4.7": "16.4.7",
     "npm:husky@9.1.7": "9.1.7",
     "npm:husky@^9.1.7": "9.1.7",
     "npm:next@15.1.3": "15.1.3_react@19.0.0_react-dom@19.0.0__react@19.0.0",
@@ -18,7 +19,8 @@
     "npm:react-dom@19": "19.0.0_react@19.0.0",
     "npm:react@19": "19.0.0",
     "npm:tailwindcss@^3.4.17": "3.4.17_postcss@8.4.49",
-    "npm:typescript@^5.7.2": "5.7.2"
+    "npm:typescript@^5.7.2": "5.7.2",
+    "npm:zod@^3.24.1": "3.24.1"
   },
   "npm": {
     "@alloc/quick-lru@5.2.0": {
@@ -635,6 +637,9 @@
       "dependencies": [
         "is-obj"
       ]
+    },
+    "dotenv@16.4.7": {
+      "integrity": "sha512-47qPchRCykZC03FhkYAhrvwU4xDBFIj1QPqaarj6mdM/hgUzfPHcpkHJOn3mJAufFeeAxAzeGsr5X0M4k6fLZQ=="
     },
     "eastasianwidth@0.2.0": {
       "integrity": "sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA=="
@@ -1353,6 +1358,9 @@
     },
     "yocto-queue@1.1.1": {
       "integrity": "sha512-b4JR1PFR10y1mKjhHY9LaGo6tmrgjit7hxVIeAmyMw3jegXR4dhYqLaQF5zMXZxY7tLpMyJeLjr1C4rLmkVe8g=="
+    },
+    "zod@3.24.1": {
+      "integrity": "sha512-muH7gBL9sI1nciMZV67X5fTKKBLtwpZ5VBp1vsOQzj1MhrBZ4wlVCm3gedKZWLp0Oyel8sIGfeiz54Su+OVT+A=="
     }
   },
   "workspace": {
@@ -1363,20 +1371,15 @@
       "npm:@types/node@^22.10.2",
       "npm:@types/react-dom@^19.0.2",
       "npm:@types/react@^19.0.2",
+      "npm:dotenv@^16.4.7",
       "npm:husky@^9.1.7",
       "npm:next@^15.1.3",
       "npm:postcss@^8.4.49",
       "npm:react-dom@19",
       "npm:react@19",
       "npm:tailwindcss@^3.4.17",
-      "npm:typescript@^5.7.2"
-    ],
-    "packageJson": {
-      "dependencies": [
-        "npm:@commitlint/cli@^19.6.1",
-        "npm:@commitlint/config-conventional@^19.6.0",
-        "npm:husky@^9.1.7"
-      ]
-    }
+      "npm:typescript@^5.7.2",
+      "npm:zod@^3.24.1"
+    ]
   }
 }

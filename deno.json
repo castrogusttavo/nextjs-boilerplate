@@ -26,13 +26,15 @@
 		"@types/node": "npm:@types/node@^22.10.2",
 		"@types/react": "npm:@types/react@^19.0.2",
 		"@types/react-dom": "npm:@types/react-dom@^19.0.2",
+		"dotenv": "npm:dotenv@^16.4.7",
 		"husky": "npm:husky@^9.1.7",
 		"next": "npm:next@^15.1.3",
 		"postcss": "npm:postcss@^8.4.49",
 		"react": "npm:react@^19.0.0",
 		"react-dom": "npm:react-dom@^19.0.0",
 		"tailwindcss": "npm:tailwindcss@^3.4.17",
-		"typescript": "npm:typescript@^5.7.2"
+		"typescript": "npm:typescript@^5.7.2",
+		"zod": "npm:zod@^3.24.1"
 	},
 	"compilerOptions": {
 		"jsx": "react-jsx",
