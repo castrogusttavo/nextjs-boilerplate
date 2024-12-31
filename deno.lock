@@ -13,6 +13,7 @@
     "npm:dotenv@^16.4.7": "16.4.7",
     "npm:husky@9.1.7": "9.1.7",
     "npm:husky@^9.1.7": "9.1.7",
+    "npm:next@*": "15.1.3_react@19.0.0_react-dom@19.0.0__react@19.0.0",
     "npm:next@15.1.3": "15.1.3_react@19.0.0_react-dom@19.0.0__react@19.0.0",
     "npm:next@^15.1.3": "15.1.3_react@19.0.0_react-dom@19.0.0__react@19.0.0",
     "npm:postcss@^8.4.49": "8.4.49",

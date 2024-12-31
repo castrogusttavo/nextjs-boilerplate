@@ -1,6 +1,23 @@
-import { config } from "dotenv"
+import { z } from 'zod';
 
-const env = config() as Record<string, string>
-const DATABASE_URL = env.DATABASE_URL
-const OPEN_AI_API_KEY = env.OPEN_AI_API_KEY
-const NEXT_PUBLIC_PUBLISHABLE_KEY = env.NEXT_PUBLIC_PUBLISHABLE_KEY
+const env = {
+  DATABASE_URL: Deno.env.get('DATABASE_URL'),
+  OPEN_AI_API_KEY: Deno.env.get('OPEN_AI_API_KEY'),
+  NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: Deno.env.get(
+    'NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY',
+  ),
+};
+
+const envSchema = z.object({
+  DATABASE_URL: z.string().url(),
+  OPEN_AI_API_KEY: z.string().min(1),
+  NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: z.string().min(1),
+});
+
+export const validatedEnv = envSchema.parse(env);
+
+export const {
+  DATABASE_URL,
+  OPEN_AI_API_KEY,
+  NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY,
+} = validatedEnv;

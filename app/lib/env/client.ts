@@ -1,8 +1,9 @@
-import { z } from "zod"
-import { config } from "dotenv"
+import { z } from 'zod';
+import { NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY } from './env.ts';
 
-const env = config() as Record<string, string>
-
-export const validatedEnv = {
-    NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: z.string().min(1).parse(env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY),
-}
+export const clientEnv = {
+  NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: z
+    .string()
+    .min(1)
+    .parse(NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY),
+};
