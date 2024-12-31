@@ -14,8 +14,7 @@
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
-		"lint": "deno run -A npm:@biomejs/biome lint",
-		"lint:fix": "deno run -A npm:@biomejs/biome lint --write",
+		"lint": "deno run -A npm:@biomejs/biome lint --write",
 		"format": "deno run -A npm:@biomejs/biome format --write",
 		"format:check": "deno run -A npm:@biomejs/biome check --write",
 		"prepare": "husky"
