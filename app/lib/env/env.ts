@@ -9,8 +9,8 @@ const env = {
 
 const envSchema = z.object({
   DATABASE_URL: z.string().url(),
-  OPEN_AI_API_KEY: z.string().min(1),
-  NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: z.string().min(1),
+  OPEN_AI_API_KEY: z.string().min(1).optional(),
+  NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: z.string().min(1).optional(),
 });
 
 export const validatedEnv = envSchema.parse(env);
