@@ -3,8 +3,7 @@ import { z } from 'zod';
 const env = {
   DATABASE_URL: process.env.DATABASE_URL,
   OPEN_AI_API_KEY: process.env.OPEN_AI_API_KEY,
-  NEXT_PUBLIC_GITHUB_API_URL:
-    process.env.NEXT_PUBLIC_GITHUB_API_URL,
+  NEXT_PUBLIC_GITHUB_API_URL: process.env.NEXT_PUBLIC_GITHUB_API_URL,
 };
 
 const envSchema = z.object({
@@ -15,8 +14,5 @@ const envSchema = z.object({
 
 export const validatedEnv = envSchema.parse(env);
 
-export const {
-  DATABASE_URL,
-  OPEN_AI_API_KEY,
-  NEXT_PUBLIC_GITHUB_API_URL,
-} = validatedEnv;
+export const { DATABASE_URL, OPEN_AI_API_KEY, NEXT_PUBLIC_GITHUB_API_URL } =
+  validatedEnv;
