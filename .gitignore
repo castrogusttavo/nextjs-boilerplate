@@ -3,15 +3,10 @@
 # dependencies
 /node_modules
 /.pnp
-.pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/versions
-deno.json
-deno.lock
-.idea
+.pnp.js
+
+# JetBrains IDE files
+.idea/
 
 # testing
 /coverage
@@ -33,7 +28,7 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
+# local env files
 .env*
 
 # vercel
@@ -42,5 +37,3 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-
-.vercel
