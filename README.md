@@ -51,8 +51,8 @@
 The best way to start with this template is using [Create Next App](https://nextjs.org/docs/api-reference/create-next-app).
 
 ```
-# deno
-deno run -A npm:create-next-app@latest -e castrogusttavo/nextjs-boilerplate
+# pnpm
+pnpm create next-app -e castrogusttavo/nextjs-boilerplate
 
 # yarn
 yarn create next-app -e castrogusttavo/nextjs-boilerplate
@@ -66,7 +66,7 @@ npx create-next-app -e castrogusttavo/nextjs-boilerplate
 To start the project locally, run:
 
 ```bash
-deno task dev
+pnpm dev
 ```
 
 Open `http://localhost:3000` with your browser to see the result.
@@ -76,7 +76,7 @@ Open `http://localhost:3000` with your browser to see the result.
 ### Requirements
 
 - [Node.js >= 20](https://nodejs.org/)
-- [deno >= 2](https://deno.land/)
+- [pnpm >= 9](https://pnpm.io/)
 
 ### Directory Structure
 
@@ -87,12 +87,12 @@ Open `http://localhost:3000` with your browser to see the result.
 
 ### Tasks (Scripts)
 
-- `deno task dev` — Starts the application in development mode at `http://localhost:3000`.
-- `deno task build` — Creates an optimized production build of your application.
-- `deno task start` — Starts the application in production mode.
-- `deno task lint` — Runs Biome for all files in the `app` directory.
-- `deno task format` — Runs Biome for fix all files in the `app` directory .
-- `deno task formart:check` — Checks all files in the `app` directory for correct formatting.
+- `pnpm dev` — Starts the application in development mode at `http://localhost:3000`.
+- `pnpm build` — Creates an optimized production build of your application.
+- `pnpm start` — Starts the application in production mode.
+- `pnpm lint` — Runs Biome for all files in the `app` directory.
+- `pnpm format` — Runs Biome for fix all files in the `app` directory .
+- `pnpm format:check` — Checks all files in the `app` directory for correct formatting.
 
 ### Path Mapping
 
