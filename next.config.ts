@@ -1,7 +1,7 @@
 import type { NextConfig } from 'next';
 
-import './src/lib/env/client';
-import './src/lib/env/server';
+import './app/lib/env/client';
+import './app/lib/env/server';
 
 import { redirects } from './redirects';
 
