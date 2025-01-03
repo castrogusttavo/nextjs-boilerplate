@@ -1,9 +1,9 @@
 import { z } from 'zod';
-import { NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY } from './env';
+import { NEXT_PUBLIC_GITHUB_API_URL } from './env';
 
 export const clientEnv = {
-  NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: z
-    .string()
-    .min(1)
-    .parse(NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY),
+  NEXT_PUBLIC_GITHUB_API_URL: z
+      .string()
+      .url()
+      .parse(NEXT_PUBLIC_GITHUB_API_URL),
 };
