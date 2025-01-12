@@ -1,4 +1,4 @@
-import {z} from 'zod';
+import { z } from 'zod';
 
 const env = {
   DATABASE_URL: process.env.DATABASE_URL,
@@ -14,5 +14,5 @@ const envSchema = z.object({
 
 export const validatedEnv = envSchema.parse(env);
 
-export const {DATABASE_URL, OPEN_AI_API_KEY, NEXT_PUBLIC_GITHUB_API_URL} =
+export const { DATABASE_URL, OPEN_AI_API_KEY, NEXT_PUBLIC_GITHUB_API_URL } =
   validatedEnv;
