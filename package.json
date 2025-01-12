@@ -16,9 +16,9 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "@biomejs/biome lint --write",
-    "format": "@biomejs/biome format --write",
-    "format:check": "@biomejs/biome check --write",
+    "lint": "deno run -A npm:@biomejs/biome lint --write",
+    "format": "deno run -A npm:@biomejs/biome format --write",
+    "format:check": "deno run -A npm:@biomejs/biome check --write",
     "prepare": "husky"
   },
   "dependencies": {
