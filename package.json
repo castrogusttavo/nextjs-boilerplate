@@ -23,7 +23,10 @@
   },
   "dependencies": {
     "dotenv": "16.4.7",
+    "fs": "0.0.1-security",
     "next": "15.1.4",
+    "path": "0.12.7",
+    "puppeteer": "24.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "zod": "3.24.1"

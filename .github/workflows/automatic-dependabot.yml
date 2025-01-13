@@ -1,0 +1,29 @@
+name: Auto Dependabot Commit
+
+on:
+  push:
+    branches:
+      - dependabot/**
+
+jobs:
+  auto-commit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Configure Git
+        run: |
+          git config user.name "Dependabot[bot]"
+          git config user.email "dependabot[bot]@users.noreply.github.com"
+
+      - name: Apply Dependabot Changes
+        run: |
+          git checkout main
+          git merge --no-ff "${{ github.ref }}" -m "chore: apply dependabot updates"
+
+      - name: Push Changes
+        run: git push origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
