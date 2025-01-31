@@ -36,10 +36,10 @@
 - ⚡️ Next.js 15 (App Router)
 - ⚛️ React 19
 - ⛑ TypeScript
+- 🖌 Tailwind 4.1
 - 📏 Biome — To find and fix problems in your code
 - 🐶 Husky — For running scripts before committing
 - 🚓 Commitlint — To make sure your commit messages follow the convention
-- 🖌 Renovate — To keep your dependencies up to date
 - 👷 PR Workflow — Run Type Check & Linters on Pull Requests
 - 🗂 Path Mapping — Import components or images using the `@` prefix
 - 🔐 CSP — Content Security Policy for enhanced security (default minimal policy)
