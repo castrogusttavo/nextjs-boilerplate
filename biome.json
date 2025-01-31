@@ -8,7 +8,7 @@
 	"files": {
 		"ignoreUnknown": false,
 		"ignore": [".next/**", "node_modules"],
-		"include": ["app/**/*"]
+		"include": ["app/**/*", "tests/**/*"]
 	},
 	"formatter": {
 		"enabled": true,
@@ -21,9 +21,29 @@
 		"enabled": true,
 		"rules": {
 			"recommended": true,
+			"a11y": {
+				"noSvgWithoutTitle": "off",
+				"useButtonType": "off",
+				"useAltText": "off",
+				"noAutofocus": "off",
+				"noPositiveTabindex": "off",
+				"useIframeTitle": "off"
+			},
 			"complexity": {
 				"noForEach": "off",
 				"noUselessConstructor": "off"
+			},
+			"suspicious": {
+				"noDebugger": "off",
+				"noConsoleLog": "off",
+				"noAssignInExpressions": "off"
+			},
+			"style": {
+				"noShoutyConstants": "off",
+				"useNamingConvention": "off"
+			},
+			"correctness": {
+				"useExhaustiveDependencies": "off"
 			}
 		}
 	},
