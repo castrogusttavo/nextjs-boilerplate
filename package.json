@@ -22,14 +22,16 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@tailwindcss/postcss": "4.0.1",
+    "@tailwindcss/postcss": "4.0.7",
     "dotenv": "16.4.7",
     "fs": "0.0.1-security",
     "next": "15.1.6",
     "path": "0.12.7",
+    "postcss": "8.5.2",
     "puppeteer": "24.1.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "tailwindcss": "4.0.7",
     "zod": "3.24.1"
   },
   "devDependencies": {
@@ -41,8 +43,6 @@
     "@types/react-dom": "^19",
     "autoprefixer": "10.4.20",
     "husky": "9.1.7",
-    "postcss": "^8.5.1",
-    "tailwindcss": "^4.0.0",
     "typescript": "^5"
   }
 }
