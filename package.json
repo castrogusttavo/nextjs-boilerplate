@@ -25,7 +25,7 @@
     "@tailwindcss/postcss": "4.0.7",
     "dotenv": "16.4.7",
     "fs": "0.0.1-security",
-    "next": "15.1.6",
+    "next": "15.2.0",
     "path": "0.12.7",
     "postcss": "8.5.2",
     "puppeteer": "24.1.1",
