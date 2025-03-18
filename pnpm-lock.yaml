@@ -36,8 +36,8 @@ importers:
         specifier: ^19.0.0
         version: 19.0.0(react@19.0.0)
       tailwindcss:
-        specifier: 4.0.7
-        version: 4.0.7
+        specifier: 4.0.14
+        version: 4.0.14
       zod:
         specifier: 3.24.2
         version: 3.24.2
@@ -47,7 +47,7 @@ importers:
         version: 1.9.4
       '@commitlint/cli':
         specifier: 19.8.0
-        version: 19.8.0(@types/node@22.12.0)(typescript@5.7.3)
+        version: 19.8.0(@types/node@22.13.10)(typescript@5.7.3)
       '@commitlint/config-conventional':
         specifier: 19.6.0
         version: 19.6.0
@@ -1181,6 +1181,9 @@ packages:
       babel-plugin-macros:
         optional: true
 
+  tailwindcss@4.0.14:
+    resolution: {integrity: sha512-92YT2dpt671tFiHH/e1ok9D987N9fHD5VWoly1CdPD/Cd1HMglvZwP3nx2yTj2lbXDAHt8QssZkxTLCCTNL+xw==}
+
   tailwindcss@4.0.7:
     resolution: {integrity: sha512-yH5bPPyapavo7L+547h3c4jcBXcrKwybQRjwdEIVAd9iXRvy/3T1CC6XSQEgZtRySjKfqvo3Cc0ZF1DTheuIdA==}
 
@@ -1328,11 +1331,11 @@ snapshots:
   '@biomejs/cli-win32-x64@1.9.4':
     optional: true
 
-  '@commitlint/cli@19.8.0(@types/node@22.12.0)(typescript@5.7.3)':
+  '@commitlint/cli@19.8.0(@types/node@22.13.10)(typescript@5.7.3)':
     dependencies:
       '@commitlint/format': 19.8.0
       '@commitlint/lint': 19.8.0
-      '@commitlint/load': 19.8.0(@types/node@22.12.0)(typescript@5.7.3)
+      '@commitlint/load': 19.8.0(@types/node@22.13.10)(typescript@5.7.3)
       '@commitlint/read': 19.8.0
       '@commitlint/types': 19.8.0
       tinyexec: 0.3.2
@@ -1379,7 +1382,7 @@ snapshots:
       '@commitlint/rules': 19.8.0
       '@commitlint/types': 19.8.0
 
-  '@commitlint/load@19.8.0(@types/node@22.12.0)(typescript@5.7.3)':
+  '@commitlint/load@19.8.0(@types/node@22.13.10)(typescript@5.7.3)':
     dependencies:
       '@commitlint/config-validator': 19.8.0
       '@commitlint/execute-rule': 19.8.0
@@ -2336,6 +2339,8 @@ snapshots:
     dependencies:
       client-only: 0.0.1
       react: 19.0.0
+
+  tailwindcss@4.0.14: {}
 
   tailwindcss@4.0.7: {}
 
