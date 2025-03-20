@@ -59,7 +59,7 @@ importers:
         version: 19.0.11
       '@types/react-dom':
         specifier: ^19
-        version: 19.0.3(@types/react@19.0.11)
+        version: 19.0.4(@types/react@19.0.11)
       autoprefixer:
         specifier: 10.4.20
         version: 10.4.20(postcss@8.5.3)
@@ -461,8 +461,8 @@ packages:
   '@types/node@22.13.10':
     resolution: {integrity: sha512-I6LPUvlRH+O6VRUqYOcMudhaIdUVWfsjnZavnsraHvpBwaEyMN29ry+0UVJhImYL16xsscu0aske3yA+uPOWfw==}
 
-  '@types/react-dom@19.0.3':
-    resolution: {integrity: sha512-0Knk+HJiMP/qOZgMyNFamlIjw9OFCsyC2ZbigmEEyXXixgre6IQpm/4V+r3qH4GC1JPvRJKInw+on2rV6YZLeA==}
+  '@types/react-dom@19.0.4':
+    resolution: {integrity: sha512-4fSQ8vWFkg+TGhePfUzVmat3eC14TXYSsiiDSLI0dVLsrm9gZFABjPy/Qu6TKgl1tq1Bu1yDsuQgY3A3DOjCcg==}
     peerDependencies:
       '@types/react': ^19.0.0
 
@@ -1158,9 +1158,6 @@ packages:
   tailwindcss@4.0.14:
     resolution: {integrity: sha512-92YT2dpt671tFiHH/e1ok9D987N9fHD5VWoly1CdPD/Cd1HMglvZwP3nx2yTj2lbXDAHt8QssZkxTLCCTNL+xw==}
 
-  tailwindcss@4.0.7:
-    resolution: {integrity: sha512-yH5bPPyapavo7L+547h3c4jcBXcrKwybQRjwdEIVAd9iXRvy/3T1CC6XSQEgZtRySjKfqvo3Cc0ZF1DTheuIdA==}
-
   tapable@2.2.1:
     resolution: {integrity: sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==}
     engines: {node: '>=6'}
@@ -1606,7 +1603,7 @@ snapshots:
     dependencies:
       undici-types: 6.20.0
 
-  '@types/react-dom@19.0.3(@types/react@19.0.11)':
+  '@types/react-dom@19.0.4(@types/react@19.0.11)':
     dependencies:
       '@types/react': 19.0.11
 
@@ -2286,8 +2283,6 @@ snapshots:
       react: 19.0.0
 
   tailwindcss@4.0.14: {}
-
-  tailwindcss@4.0.7: {}
 
   tapable@2.2.1: {}
 
