@@ -22,7 +22,7 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@tailwindcss/postcss": "4.1.4",
+    "@tailwindcss/postcss": "4.1.11",
     "dotenv": "17.0.1",
     "fs": "0.0.1-security",
     "next": "15.3.5",
@@ -31,11 +31,11 @@
     "puppeteer": "24.11.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "tailwindcss": "4.1.4",
+    "tailwindcss": "4.1.11",
     "zod": "3.25.71"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.9.4",
+    "@biomejs/biome": "2.0.6",
     "@commitlint/cli": "19.8.0",
     "@commitlint/config-conventional": "19.8.0",
     "@types/node": "^24",
