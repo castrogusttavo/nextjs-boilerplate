@@ -22,7 +22,7 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@tailwindcss/postcss": "4.1.4",
+    "@tailwindcss/postcss": "4.1.11",
     "dotenv": "17.0.1",
     "fs": "0.0.1-security",
     "next": "15.3.5",
