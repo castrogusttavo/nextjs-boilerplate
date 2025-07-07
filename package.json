@@ -31,7 +31,7 @@
     "puppeteer": "24.11.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "tailwindcss": "4.1.4",
+    "tailwindcss": "4.1.11",
     "zod": "3.25.71"
   },
   "devDependencies": {
