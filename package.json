@@ -37,7 +37,7 @@
   "devDependencies": {
     "@biomejs/biome": "2.0.6",
     "@commitlint/cli": "19.8.0",
-    "@commitlint/config-conventional": "19.8.0",
+    "@commitlint/config-conventional": "19.8.1",
     "@types/node": "^24",
     "@types/react": "^19",
     "@types/react-dom": "^19",
